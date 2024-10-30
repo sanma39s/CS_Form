@@ -15,6 +15,9 @@ namespace CS_Form
         public Form1()
         {
             InitializeComponent();
+
+            Testbutton testbutton = new Testbutton();
+            Controls.Add(testbutton);
         }
     }
 }
