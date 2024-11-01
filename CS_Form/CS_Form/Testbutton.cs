@@ -8,7 +8,19 @@ using System.Windows.Forms;
 
 namespace CS_Form
 {
-    internal class Testbutton:Button
+    internal class Testbutton : Button
     {
+        public Testbutton()
+        {
+            Click += OnClick;
+        }
+        public void OnClick(object sender, EventArgs s)
+        {
+        MessageBox.Show("おおおお")
+        }
     }
+
+    
+
+
 }
