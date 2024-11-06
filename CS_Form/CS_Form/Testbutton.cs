@@ -16,7 +16,7 @@ namespace CS_Form
         }
         public void OnClick(object sender, EventArgs s)
         {
-        MessageBox.Show("おおおお")
+            MessageBox.Show("おおおお");
         }
     }
 
