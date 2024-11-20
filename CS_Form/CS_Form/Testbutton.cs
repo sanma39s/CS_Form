@@ -17,7 +17,7 @@ namespace CS_Form
             _form1 = form;
             Click += OnClick;
             Text = id.ToString();
-            Location = new System.Drawing.Point(x, y);
+            Location = new Point(x, y);
             Size = new Size(width, height);
         }
         public void OnClick(object sender, EventArgs s)

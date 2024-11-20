@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS_Form.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,17 @@ namespace CS_Form
     public partial class Form1 : Form
     {
         TestLabel _TestLabel;
+        TEXTBOX _TEXTBOX;
+
+        TextBox textBox;
         public Form1()
         {
             InitializeComponent();
+
+            string[] strs =
+            {
+                "kzt","tmrnmru","sjk","htn","sky","tkm","ts","usgrs","rr","tr",
+            };
 
             for (int i = 0; i < 10; i++)
             {
@@ -23,9 +32,15 @@ namespace CS_Form
                 Controls.Add(testButton);
             }
 
-            TestLabel testLabel = new TestLabel("らべるです。",10,300,100,500);
+            TestLabel testLabel = new TestLabel("らべるでぃす。",10,300,100,500);
+            Controls.Add((testLabel));
+
+            TEXTBOX textBox = new TEXTBOX("てきすとぼっくす", 10, 250, 500, 100);
             Controls.Add((testLabel));
         }
+
+       
+
         /// <summary>
         /// ラベルの文字を更新する
         /// </summary>
